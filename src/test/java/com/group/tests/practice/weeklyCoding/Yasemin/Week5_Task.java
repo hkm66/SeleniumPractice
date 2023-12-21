@@ -1,7 +1,5 @@
 package com.group.tests.practice.weeklyCoding.Yasemin;
 
-import java.util.*;
-
 public class Week5_Task {
     /*
     String -- Find the unique
