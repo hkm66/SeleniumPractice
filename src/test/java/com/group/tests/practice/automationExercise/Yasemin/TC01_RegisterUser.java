@@ -4,7 +4,7 @@ import com.group.tests.utilities.Driver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
+
 
 public class TC01_RegisterUser {
     AutomationRegisterPage registerPage;
