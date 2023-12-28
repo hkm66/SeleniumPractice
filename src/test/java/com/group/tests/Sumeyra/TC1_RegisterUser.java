@@ -72,8 +72,19 @@ public class TC1_RegisterUser {
 
 
         //10. Select checkbox 'Sign up for our newsletter!'
+
+        WebElement signupCheckbox = Driver.getDriver().findElement(By.xpath("//input[@id='newsletter']"));
+        signupCheckbox.click();
+
+
         //11. Select checkbox 'Receive special offers from our partners!'
+
+        WebElement receiveCheckbox = Driver.getDriver().findElement(By.xpath("//input[@id='optin']"));
+        receiveCheckbox.click();
+
         //12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
+
+
         //13. Click 'Create Account button'
         //14. Verify that 'ACCOUNT CREATED!' is visible
         //15. Click 'Continue' button
