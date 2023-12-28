@@ -5,7 +5,7 @@ public class passwordValidation {
     public static void main(String[] args) {
 
 
-        System.out.println(passwordValidation("Sumeyra123! "));
+        System.out.println(passwordValidation("Sumeyra!"));
     }
 
     public static boolean passwordValidation(String password){
@@ -30,22 +30,15 @@ public class passwordValidation {
                 hasLowerCase = true;
             } else if (Character.isDigit(ch)) {
                 hasDigit = true;
-
             }else {
                 hasSpecialChar = true;
             }
 
         }
 
-        boolean isStrongPassword = hasAtLeast6Chars && hasUpperCase && hasLowerCase && hasDigit && hasSpecialChar;
+        boolean isValid = hasAtLeast6Chars && hasUpperCase && hasLowerCase && hasDigit && hasSpecialChar;
 
-        if(isStrongPassword=true) {
-            return true;
-        }
-
-
-
-        return isStrongPassword;
+        return isValid;
 
     }
 
