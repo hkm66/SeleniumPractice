@@ -7,8 +7,12 @@ public class Array_SortInDescendingOrder {
     /*
         Write a return method that can sort an int array in descending order without using the sort method
      */
+    public static void main(String[] args) {
+    int [] a={10,20,7, 8, 90};
+        System.out.println(Arrays.toString(sortingArrayDes(a)));
 
-    public int[] sortingArrayAsc(int[] arr) {
+    }
+    public static int[] sortingArrayDes(int[] arr) {
 
         int[] result = Arrays.copyOfRange(arr, 0, arr.length);
 
