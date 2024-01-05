@@ -18,6 +18,17 @@ public class Test {
         System.out.println("--------------------Sum of digit in String---------------");
         Week6_Tasks.sumOfDigitInString("1er8ty1");
 
+        System.out.println("--------------------Array Min Number---------------");
+        Week7_Tasks.findMinNumber(new int[]{3,5,15,7,9});
+
+        System.out.println("--------------------Ascending Array Without Sort()---------------");
+        Week7_Tasks.ascendingArray(new int[]{4,5,7,2,9,1});
+
+        System.out.println("--------------------Descending Array Without Sort()---------------");
+        Week7_Tasks.descendingArray(new int[]{4,5,7,2,9,1});
+
+
+
 
     }
 }
