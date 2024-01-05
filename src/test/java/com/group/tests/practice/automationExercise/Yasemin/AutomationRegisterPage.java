@@ -101,6 +101,21 @@ public class AutomationRegisterPage {
     @FindBy(xpath = "//b[.='Account Deleted!']")
     public WebElement accountDeletedText;
 
+    @FindBy(xpath = "//h2[.='Login to your account']")
+    public WebElement loginAccountText;
+
+    @FindBy(xpath = "//input[@data-qa='login-email']")
+    public WebElement loginEmail;
+
+    @FindBy(xpath = "//input[@data-qa='login-password']")
+    public WebElement loginPassword;
+
+    @FindBy(xpath = "//button[@data-qa='login-button']")
+    public WebElement loginButton;
+
+    @FindBy(partialLinkText = "<incorrect>")
+    public WebElement incorrectText;
+
 
 
 
