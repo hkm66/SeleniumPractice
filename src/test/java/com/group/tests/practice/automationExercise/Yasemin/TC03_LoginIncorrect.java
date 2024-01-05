@@ -1,6 +1,6 @@
 package com.group.tests.practice.automationExercise.Yasemin;
 
-import com.google.common.base.Verify;
+
 import com.group.tests.utilities.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
