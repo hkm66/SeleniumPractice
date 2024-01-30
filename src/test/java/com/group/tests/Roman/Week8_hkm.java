@@ -31,8 +31,8 @@ public class Week8_hkm {
 
 
     //solution without additional array using two pointers technique
-    //[0, 0, 2, 0, 7, 2, 3]
-    // ^     ^
+    //[2, 7, 0, 0, 0, 2, 3]
+    //       ^^
     public static int[] moveZeroesToEnd (int[] array) {
         //after each iteration increment left pointer and moving right pointer back to the left
         for (int left = 0, right = 0; right < array.length; left++, right = left) {
