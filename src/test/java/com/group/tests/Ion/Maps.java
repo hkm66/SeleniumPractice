@@ -18,4 +18,17 @@ public class Maps {
         charFrequency.forEach((key, value) ->
                 System.out.print(key + "" + value));
     }
+
+    public static int minValue(Map<String,Integer> map){
+        if(map.isEmpty()){
+            throw new IllegalArgumentException ("Map can not be empty");
+        }
+        int minValue = Integer.MAX_VALUE;
+        for (Integer each : map.values()) {
+            if(each < minValue){
+                minValue = each;
+            }
+        }
+        return minValue;
+    }
 }
