@@ -1,17 +1,22 @@
 package com.group.tests.Roman;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Week8_hkm.getIntegersWithSum0(12)));
 
+        var str = "aabbbccddd";
+        System.out.println(Week10_hkm.freqOfEachElement(str));
 
-        int[] array = {0, 0, 2, 0, 7, 2, 3};
-        int[] array2 = {1, 2, 0, 1, 0, 0, 6, 2};
-        int[] array3 = {};
-        System.out.println(Arrays.toString(Week8_hkm.moveZeroesToEnd(array3)));
+        var map = new HashMap<Integer, Integer>();
+        map.put(1, 16);
+        map.put(2, 9);
+        map.put(3, 12);
+        map.put(4, 6);
+        map.put(5, 11);
 
-        //test
+        System.out.println(Week10_hkm.minValueFromMap(map));
     }
 }
