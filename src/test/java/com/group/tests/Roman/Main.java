@@ -7,16 +7,21 @@ import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
 
-        var str = "aabbbccddd";
-        System.out.println(Week10_hkm.freqOfEachElement(str));
+        ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(3,5,2,6,1));
+        System.out.println(Week11_hkm.sortArrayInAscRecurs(arrayList));
+        System.out.println(Week11_hkm.sortArrayInAsc(arrayList));
+
+        System.out.println(Week11_hkm.sortArrayInDescRecurs(arrayList));
+        System.out.println(Week11_hkm.sortArrayInDesc(arrayList));
 
         var map = new HashMap<Integer, Integer>();
-        map.put(1, 16);
-        map.put(2, 9);
-        map.put(3, 12);
-        map.put(4, 6);
-        map.put(5, 11);
-
-        System.out.println(Week10_hkm.minValueFromMap(map));
+        map.put(1, 5);
+        map.put(2, 7);
+        map.put(3, 3);
+        map.put(4, 4);
+        map.put(5, 1);
+        map.put(6, 2);
+        map.put(7, 4);
+        System.out.println(Week11_hkm.sortedMapByValues(map));
     }
 }
