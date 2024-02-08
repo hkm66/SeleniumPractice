@@ -1,9 +1,6 @@
 package com.group.tests.Roman;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.PriorityQueue;
-import java.util.Stack;
+import java.util.*;
 
 public class Week11_hkm {
 
@@ -91,5 +88,28 @@ public class Week11_hkm {
             list.add(stack.pop());
 
         return list;
+    }
+
+    //sorted map by values
+    // 1,2   2,4   3,1  4,0  5,8
+    //
+    public static LinkedHashMap<Integer, Integer> sortedMapByValues(HashMap<Integer, Integer> map) {
+        var queue = new PriorityQueue<Integer>(map.values());
+        var linkedMap = new LinkedHashMap<Integer, Integer>();
+        var keysSet = new HashSet<>(map.keySet());
+
+        while (!queue.isEmpty()) {
+            //min value from map values
+            var value = queue.poll();
+            //iterating keys to find matching value
+            for (Integer key : keysSet) {
+                if (map.get(key) == value) {
+                    linkedMap.put(key, value);
+                    map.remove(key);
+                }
+            }
+        }
+
+        return linkedMap;
     }
 }
